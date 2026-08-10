@@ -1,6 +1,7 @@
 # Robot Pet Assistant : RoboBud
 
-A three-tier ASP.NET Core MVC application for monitoring and managing a robot pet and assistant. During the initial development phase, robot telemetry is simulated by random values within a range and stored in a database instead of being collected from physical sensors.
+A three-tier ASP.NET Core console application prototype for monitoring and managing a robot pet and assistant.</br>
+During the initial development phase, robot telemetry is simulated by random values within a range and stored in a database instead of being collected from physical sensors.
 
 ## Features
 
@@ -13,26 +14,17 @@ A three-tier ASP.NET Core MVC application for monitoring and managing a robot pe
 
 ## Architecture
 
-* **Presentation:** ASP.NET Core MVC controllers, views, and view models
-* **Business Logic:** Robot state, mood, maintenance, and cost services
-* **Data Access:** Entity Framework Core repositories and database operations
+- **Presentation Layer:** .NET console menus, user commands, and formatted output
+- **Business Logic Layer:** Robot behaviour, state, maintenance, and cost-management services
+- **Data Access Layer:** Entity Framework Core repositories and database operations
 
 ```text
-MVC Web Application → Business Logic Layer → Data Access Layer → Database
-```
-
-## Project Structure
-
-```text
-RobotPet.Web
-RobotPet.BL
-RobotPet.DAL
-RobotPet.Tests
+Console Interface → Business Logic Layer → Data Access Layer → Database
 ```
 
 ## Initial Technology Stack
 
-* C# and ASP.NET Core MVC
+* C# and Console Project
 * Entity Framework Core
 * SQL Server
 * xUnit and Moq
