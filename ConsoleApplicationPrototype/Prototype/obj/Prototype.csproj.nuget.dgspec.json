@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/alisonemilien/Projects/Robotics-and-Systems/robobud/ASP.NET Core MVC/Prototype/Prototype.csproj": {}
+    "/Users/alisonemilien/Projects/Robotics-and-Systems/robobud/ConsoleApplicationPrototype/Prototype/Prototype.csproj": {}
   },
   "projects": {
-    "/Users/alisonemilien/Projects/Robotics-and-Systems/robobud/ASP.NET Core MVC/Prototype/Prototype.csproj": {
+    "/Users/alisonemilien/Projects/Robotics-and-Systems/robobud/ConsoleApplicationPrototype/Prototype/Prototype.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/alisonemilien/Projects/Robotics-and-Systems/robobud/ASP.NET Core MVC/Prototype/Prototype.csproj",
+        "projectUniqueName": "/Users/alisonemilien/Projects/Robotics-and-Systems/robobud/ConsoleApplicationPrototype/Prototype/Prototype.csproj",
         "projectName": "Prototype",
-        "projectPath": "/Users/alisonemilien/Projects/Robotics-and-Systems/robobud/ASP.NET Core MVC/Prototype/Prototype.csproj",
+        "projectPath": "/Users/alisonemilien/Projects/Robotics-and-Systems/robobud/ConsoleApplicationPrototype/Prototype/Prototype.csproj",
         "packagesPath": "/Users/alisonemilien/.nuget/packages/",
-        "outputPath": "/Users/alisonemilien/Projects/Robotics-and-Systems/robobud/ASP.NET Core MVC/Prototype/obj/",
+        "outputPath": "/Users/alisonemilien/Projects/Robotics-and-Systems/robobud/ConsoleApplicationPrototype/Prototype/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/alisonemilien/.nuget/NuGet/NuGet.Config"
