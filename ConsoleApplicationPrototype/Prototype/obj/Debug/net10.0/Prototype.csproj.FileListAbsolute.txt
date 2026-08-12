@@ -1,0 +1,15 @@
+/Users/alisonemilien/Projects/Robotics-and-Systems/robobud/ConsoleApplicationPrototype/Prototype/bin/Debug/net10.0/Prototype
+/Users/alisonemilien/Projects/Robotics-and-Systems/robobud/ConsoleApplicationPrototype/Prototype/bin/Debug/net10.0/Prototype.deps.json
+/Users/alisonemilien/Projects/Robotics-and-Systems/robobud/ConsoleApplicationPrototype/Prototype/bin/Debug/net10.0/Prototype.runtimeconfig.json
+/Users/alisonemilien/Projects/Robotics-and-Systems/robobud/ConsoleApplicationPrototype/Prototype/bin/Debug/net10.0/Prototype.dll
+/Users/alisonemilien/Projects/Robotics-and-Systems/robobud/ConsoleApplicationPrototype/Prototype/bin/Debug/net10.0/Prototype.pdb
+/Users/alisonemilien/Projects/Robotics-and-Systems/robobud/ConsoleApplicationPrototype/Prototype/obj/Debug/net10.0/Prototype.GeneratedMSBuildEditorConfig.editorconfig
+/Users/alisonemilien/Projects/Robotics-and-Systems/robobud/ConsoleApplicationPrototype/Prototype/obj/Debug/net10.0/Prototype.AssemblyInfoInputs.cache
+/Users/alisonemilien/Projects/Robotics-and-Systems/robobud/ConsoleApplicationPrototype/Prototype/obj/Debug/net10.0/Prototype.AssemblyInfo.cs
+/Users/alisonemilien/Projects/Robotics-and-Systems/robobud/ConsoleApplicationPrototype/Prototype/obj/Debug/net10.0/Prototype.csproj.CoreCompileInputs.cache
+/Users/alisonemilien/Projects/Robotics-and-Systems/robobud/ConsoleApplicationPrototype/Prototype/obj/Debug/net10.0/Prototype.sourcelink.json
+/Users/alisonemilien/Projects/Robotics-and-Systems/robobud/ConsoleApplicationPrototype/Prototype/obj/Debug/net10.0/Prototype.dll
+/Users/alisonemilien/Projects/Robotics-and-Systems/robobud/ConsoleApplicationPrototype/Prototype/obj/Debug/net10.0/refint/Prototype.dll
+/Users/alisonemilien/Projects/Robotics-and-Systems/robobud/ConsoleApplicationPrototype/Prototype/obj/Debug/net10.0/Prototype.pdb
+/Users/alisonemilien/Projects/Robotics-and-Systems/robobud/ConsoleApplicationPrototype/Prototype/obj/Debug/net10.0/Prototype.genruntimeconfig.cache
+/Users/alisonemilien/Projects/Robotics-and-Systems/robobud/ConsoleApplicationPrototype/Prototype/obj/Debug/net10.0/ref/Prototype.dll
