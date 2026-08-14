@@ -15,7 +15,9 @@ public class RobotStatusServiceTests
         _service = new RobotStatusService();
     }
 
+    
     [Test]
+    [Category("Test on RobotStatusService")]
     [TestCase(RobotStatus.ACCEPT, true)]
     [TestCase(RobotStatus.RELUCTANT, false)]
     [TestCase(RobotStatus.REFUSE, false)]

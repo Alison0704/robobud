@@ -4,25 +4,29 @@ Build a console application where a robotic pet prompts the user to feed or play
 
 ## Features
 
-* Happiness Level - will not comply to task if it did not play
-* Satiated Level - will not comply to task if not fed
+* Level Percentage:
+    - Happiness Level - will not comply to task if it did not play
+    - Satiated Level - will not comply to task if not fed
 
 * Task:
     - Request the current time
     - Request a pomodoro timer
 
 * Activity
-    - Increase `Satiated Level` : Feed using a feeder machine.
-    - Increase `Happiness Level` : Play games
+    - Increase `Satiated Level` : Feed with virtual food.
+    - Increase `Happiness Level` : Play games.
 
-* Games: 
+* Games:
     * Guess my number:
-        - `Happiness Level` increase by 10% if guessed wrong after 5 turns.
-        - `Happiness Level` increase by 30% if guessed correctly.
+        - `Happiness Level` increase by 10% if guessed correctly after 5 turns.
+        - `Happiness Level` increase by 30% if guessed correctly before 5 turns.
         - RoboBud will let user know if it's lower or upper. 
+    * More can be added later...
+
+* Status: REFUSE, RELUCTANT, ACCEPT
 
 ## Cycle
-* Wakes up/Created
+* Wakes up/Created (BootOnService)
     - State its name and current age
     - State the current Happiness and Hunger Level
 
@@ -43,17 +47,26 @@ Console Interface -> Business Logic Layer -> Data Access Layer -> Database
 
 * C# Classes and Console App Project
 * SQLites Database
-* NUnits
+* NUnit
 
-## Test cases
-* Pet refuses task when hunger above threshold.
-* Pet refuses task when happiness below threshold.
-* Feeding changes hunger and persists state once.
-* Playing changes happiness and persists state once.
-* Time request returns value from injected time provider.
-* Pomodoro task starts only when compliance conditions are met.
+## Learning section
 
-## Info Section
+### NUnit
+Since this is the first time I am using NUnits, I want to log down what I have learn.
+
+- `[SetUp]` tells NUnit to execute this method before every test case.
+- `[Test]`  marks this method as an individual NUnit test.
+- `[TestCase]` allows one test method to run multiple times with different inputs.
+- `[OneTimeSetUp]` — runs once before all tests in the test class.
+- `[TearDown]` — runs after every test case, commonly for cleanup.
+- `[OneTimeTearDown]` — runs once after every test in the class has finished.
+
+### NUnit - Organisation
+- `[TestFixture]` — marks a class as an NUnit test class.
+- `[Category("Name")]` — groups tests, such as Unit, Integration, or Database.
+- `[Description("...")]` — documents what a test verifies.
+- `[Order(1)]` — controls test execution order, although independent tests are preferred.
+                       
 
 ### Testing tools - NUnits
 
