@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/tests/">
+    <Project Path="tests/BLL.Tests/BLL.Tests.csproj" />
+    <Project Path="tests/Core.Tests/Core.Tests.csproj" />
+    <Project Path="tests/DAL.Tests/DAL.Tests.csproj" />
+  </Folder>
+  <Project Path="BLL/BLL.csproj" />
+  <Project Path="Console/Console.csproj" />
+  <Project Path="Core/Core.csproj" />
+  <Project Path="DAL/DAL.csproj" />
+</Solution>
