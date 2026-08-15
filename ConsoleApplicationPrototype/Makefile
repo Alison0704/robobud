@@ -1,9 +1,10 @@
 .PHONY: run test
 
-make run:
+run:
 	@echo "Running the application..."
-	@dotnet run --project ConsoleApplicationPrototype/ConsoleApplicationPrototype.csproj
-make test:
+	@dotnet run --project Console/Console.csproj
+
+test:
 	@echo "Running tests..."
 	@dotnet restore
 	@dotnet build

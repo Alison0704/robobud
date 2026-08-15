@@ -1,15 +1,19 @@
-﻿namespace DAL;
+﻿using Core;
+namespace DAL;
 
 public class RoboBud
 {
     public string Name { get; set; }
     public int Age { get; set; }
-    public double HappinessLevel { get; set; }
 
-    public RoboBud(string name, int age, double happinessLevel)
+    public RobotLevel HappyLevel { get; set; }
+    public RobotLevel EnergyLevel { get; set; }
+
+    public RoboBud(string name, int age, RobotLevel happyLevel, RobotLevel energyLevel)
     {
         Name = name;
         Age = age;
-        HappinessLevel = happinessLevel;
+        HappyLevel = happyLevel;
+        EnergyLevel = energyLevel;
     }
 }

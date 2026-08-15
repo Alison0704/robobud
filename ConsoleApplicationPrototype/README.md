@@ -6,14 +6,14 @@ Build a console application where a robotic pet prompts the user to feed or play
 
 * Level Percentage:
     - Happiness Level - will not comply to task if it did not play
-    - Satiated Level - will not comply to task if not fed
+    - Energy Level - will not comply to task if not fed
 
 * Task:
     - Request the current time
     - Request a pomodoro timer
 
 * Activity
-    - Increase `Satiated Level` : Feed with virtual food.
+    - Increase `Energy Level` : Feed with virtual food.
     - Increase `Happiness Level` : Play games.
 
 * Games:
@@ -22,6 +22,10 @@ Build a console application where a robotic pet prompts the user to feed or play
         - `Happiness Level` increase by 30% if guessed correctly before 5 turns.
         - RoboBud will let user know if it's lower or upper. 
     * More can be added later...
+
+* Feeding :
+    * Use the enter key till user feeds RoboBud as much as they want.
+    * See the Energy Bar go up, but not over 100%.
 
 * Status: REFUSE, RELUCTANT, ACCEPT
 
@@ -66,11 +70,10 @@ Since this is the first time I am using NUnits, I want to log down what I have l
 - `[Category("Name")]` — groups tests, such as Unit, Integration, or Database.
 - `[Description("...")]` — documents what a test verifies.
 - `[Order(1)]` — controls test execution order, although independent tests are preferred.
-                       
 
-### Testing tools - NUnits
-
-### Design patterns
+## Design patterns
+`Singleton` - Since RoboBud should have only one active instance while the application is running, the Singleton pattern prevents the application from creating another instance when one already exists.
+`[LaterAdditions]` `Factory` - When more games will be added later, I don't want to bother with all the set up for each game, I want to just call a game using the chose the user made.
 
 
 
