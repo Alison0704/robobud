@@ -5,15 +5,15 @@ Build a console application where a robotic pet prompts the user to feed or play
 ## Features
 
 * Level Percentage:
-    - Happiness Level - will not comply to task if it did not play
-    - Energy Level - will not comply to task if not fed
+    - Happiness Level - will not comply to task if it did not play.
+    - Energized Level - will not comply to task if not fed.
 
 * Task:
     - Request the current time
     - Request a pomodoro timer
 
 * Activity
-    - Increase `Energy Level` : Feed with virtual food.
+    - Increase `Energized Level` : Feed with virtual food.
     - Increase `Happiness Level` : Play games.
 
 * Games:
@@ -25,32 +25,33 @@ Build a console application where a robotic pet prompts the user to feed or play
 
 * Feeding :
     * Use the enter key till user feeds RoboBud as much as they want.
+        - By pressing 'SpaceBar'
     * See the Energy Bar go up, but not over 100%.
 
 * Status: REFUSE, RELUCTANT, ACCEPT
 
 ## Cycle
-* Wakes up/Created (BootOnService)
-    - State its name and current age
-    - State the current Happiness and Hunger Level
+* Creation
+    - Reset the content in database
+    - Ask for name
+    - Both levels are at 100%
 
-* User ask for a task
+* Boot up
+    - State its name.
+    - State the current Happiness and Energy Level
+
+* Task Request
     - REFUSE: will not do the task
         + Both levels are below 40%
-    - RELUCTANT: 50% chance it will not to the task
+    - RELUCTANT: 50% chance it will not do the task
         + Either one of the levels is below 40%
     - ACCEPT: will always do the task
         + Both levels are above 40%
 
-## Prototype architechture 
-```text
-Console Interface -> Business Logic Layer -> Data Access Layer -> Database
-```
-
 ## Initial Technology Stack
 
 * C# Classes and Console App Project
-* SQLites Database
+* SQLite Database
 * NUnit
 
 ## Learning section
@@ -72,8 +73,9 @@ Since this is the first time I am using NUnits, I want to log down what I have l
 - `[Order(1)]` — controls test execution order, although independent tests are preferred.
 
 ## Design patterns
-`Singleton` - Since RoboBud should have only one active instance while the application is running, the Singleton pattern prevents the application from creating another instance when one already exists.
-`[LaterAdditions]` `Factory` - When more games will be added later, I don't want to bother with all the set up for each game, I want to just call a game using the chose the user made.
+`Singleton` - Since RoboBud should have only one active instance while the application is running, the Singleton pattern prevents the application from creating another instance when one already exists. </br> 
+`[LaterAdditions]` `Factory` – As more games are added, the factory centralizes their creation and setup. The program only provides the user’s selected game type and receives the appropriate game service.
+`Observer` - Observing the current status of both levels in order to change the state. 
 
 
 
