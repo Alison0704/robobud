@@ -5,7 +5,7 @@ Build a Web App where a robotic pet prompts the user to feed or play based on it
 The broad process of this project:
 
 - `[OnGoing]`Setting up BLL → DAL → SQLite but will a console interface.
-- `[Pending]`Duplicate the folder to implement ASP.NET Core Web API.
+- `[Pending]`Implement ASP.NET Core Web API.
 - `[Pending]`Set up the React frontend with modifications to the backend if necessary.(But kept at a minimum).
 - `[Pending]`Connections using HTTP/JSON.
 - `[Pending]`Link to Portfolio Website.
