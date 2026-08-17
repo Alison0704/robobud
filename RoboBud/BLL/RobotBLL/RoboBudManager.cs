@@ -13,8 +13,8 @@ public sealed class RoboBudManager
     {
         Robot = new RoboBud(
             name: "RoboBud",
-            happyLevel: new RobotLevel { Type = RobotLevelType.HAPPY, Percentage = 100 },
-            energyLevel: new RobotLevel { Type = RobotLevelType.ENERGIZED, Percentage = 100 }
+            happyLevel: new RobotLevel { Type = RobotLevelType.HAPPY, Percentage = 70 },
+            energyLevel: new RobotLevel { Type = RobotLevelType.ENERGIZED, Percentage = 70 }
         );
     }
 

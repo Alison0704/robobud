@@ -26,6 +26,7 @@ Build a console application where a robotic pet prompts the user to feed or play
 * Feeding :
     * Use the enter key till user feeds RoboBud as much as they want.
         - By pressing 'SpaceBar'
+    * `[LaterAddition]` Play more game to get more food resources.
     * See the Energy Bar go up, but not over 100%.
 
 * Status: REFUSE, RELUCTANT, ACCEPT
@@ -39,6 +40,7 @@ Build a console application where a robotic pet prompts the user to feed or play
 * Boot up
     - State its name.
     - State the current Happiness and Energy Level
+    - Based on the saved timed on Program exit and the boot up time, 0.2*{difference in minutes} is deducted from both levels.
 
 * Task Request
     - REFUSE: will not do the task
@@ -54,7 +56,34 @@ Build a console application where a robotic pet prompts the user to feed or play
 * SQLite Database
 * NUnit
 
+## Folder Organization
+- Assets: Any images added in documentation and/or possible future UI contents
+- BLL: All the services the app performs.
+- Controller
+    - Console: 
+    - Helper: Any assists functions that will make the main consoleApp file readable.
+- Core
+    - Model: Classes that represent the data or concepts the application works with.
+- DAL: Communication with the Database or Core.
+
 ## Learning section
+
+### Database and DAL creation
+The following attributes has been distrilled down to the following based on the requirements listed above.
+```
+CREATE TABLE Robot(
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    Name TEXT NOT NULL,
+    CreatedAt TEXT NOT NULL DEFAULT (datetime('now')),
+    UpdatedAt TEXT NOT NULL DEFAULT (datetime('now'))); 
+
+CREATE TABLE RobotLevel(
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    RobotId INTEGER NOT NULL,
+    Type TEXT NOT NULL CHECK(Type IN ('HAPPY', 'ENERGIZED')),
+    Percentage INTEGER NOT NULL CHECK(Percentage BETWEEN 0 AND 100),
+    FOREIGN KEY (RobotId) REFERENCES Robot(Id));
+```
 
 ### NUnit
 Since this is the first time I am using NUnits, I want to log down what I have learn.
@@ -75,7 +104,14 @@ Since this is the first time I am using NUnits, I want to log down what I have l
 ## Design patterns
 `Singleton` - Since RoboBud should have only one active instance while the application is running, the Singleton pattern prevents the application from creating another instance when one already exists. </br> 
 `[LaterAdditions]` `Factory` – As more games are added, the factory centralizes their creation and setup. The program only provides the user’s selected game type and receives the appropriate game service.
-`Observer` - Observing the current status of both levels in order to change the state. 
+
+## TODO
+Todo: 
+TODO Design database and normalize (Check ACID Database)
+TODO Create Tables
+TODO Create Object in DAL (Table Name = Object Name / Table Column = Object Attribute)
+TODO Create DAL per object
+
 
 
 

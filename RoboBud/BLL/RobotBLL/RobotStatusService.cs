@@ -40,4 +40,19 @@ public class RobotStatusService
     {
         robot.HappyLevel.Percentage = Math.Min(robot.HappyLevel.Percentage + amount, 100);
     }
+
+    public void DecreaseHappiness(RoboBud robot, int amount)
+    {
+        robot.HappyLevel.Percentage = Math.Max(robot.HappyLevel.Percentage - amount, 0);
+    }
+
+    public void IncreaseEnergy(RoboBud robot, int amount)
+    {
+        robot.EnergyLevel.Percentage = Math.Min(robot.EnergyLevel.Percentage + amount, 100);
+    }
+
+    public void DecreaseEnergy(RoboBud robot, int amount)
+    {
+        robot.EnergyLevel.Percentage = Math.Max(robot.EnergyLevel.Percentage - amount, 0);
+    }
 }

@@ -6,4 +6,9 @@ public class CurrentTimeService
     {
         return DateTime.Now;
     }
+
+    public string GetCurrentTimeFormatted()
+    {
+        return DateTime.Now.ToString("HH:mm:ss");
+    }
 }
