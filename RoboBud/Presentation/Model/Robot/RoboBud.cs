@@ -1,5 +1,4 @@
-﻿using Core;
-namespace DAL;
+﻿namespace RoboBud.Presentation.Model.Robot;
 
 public class RoboBud
 {

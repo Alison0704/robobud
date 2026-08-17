@@ -1,6 +1,8 @@
-using DAL;
+using BLL;
+using RoboBud.Presentation.Model.Robot;
+using RoboBudModel = RoboBud.Presentation.Model.Robot.RoboBud;
 
-namespace BLL;
+namespace RoboBud.BLL.GameBLL;
 
 public class GuessMyNumberService : IGameService
 {
@@ -17,7 +19,7 @@ public class GuessMyNumberService : IGameService
         _robotStatusService = robotStatusService;
     }
 
-    public void Play(RoboBud robot)
+    public void Play(RoboBudModel robot)
     {
         int secretNumber = Random.Shared.Next(
             MINIMUM_NUMBER,

@@ -1,5 +1,6 @@
-using Core;
-using DAL;
+using RoboBud.Presentation.Model.Robot;
+using RoboBud.Presentation.Model.Type;
+using RoboBudModel = RoboBud.Presentation.Model.Robot.RoboBud;
 
 namespace BLL;
 
@@ -36,22 +37,22 @@ public class RobotStatusService
         };
     }
 
-    public void IncreaseHappiness(RoboBud robot, int amount)
+    public void IncreaseHappiness(RoboBudModel robot, int amount)
     {
         robot.HappyLevel.Percentage = Math.Min(robot.HappyLevel.Percentage + amount, 100);
     }
 
-    public void DecreaseHappiness(RoboBud robot, int amount)
+    public void DecreaseHappiness(RoboBudModel robot, int amount)
     {
         robot.HappyLevel.Percentage = Math.Max(robot.HappyLevel.Percentage - amount, 0);
     }
 
-    public void IncreaseEnergy(RoboBud robot, int amount)
+    public void IncreaseEnergy(RoboBudModel robot, int amount)
     {
         robot.EnergyLevel.Percentage = Math.Min(robot.EnergyLevel.Percentage + amount, 100);
     }
 
-    public void DecreaseEnergy(RoboBud robot, int amount)
+    public void DecreaseEnergy(RoboBudModel robot, int amount)
     {
         robot.EnergyLevel.Percentage = Math.Max(robot.EnergyLevel.Percentage - amount, 0);
     }

@@ -1,4 +1,6 @@
-namespace Core;
+using RoboBud.Presentation.Model.Type;
+
+namespace RoboBud.Presentation.Model.Robot;
 
 public class RobotLevel
 {

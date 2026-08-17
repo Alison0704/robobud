@@ -1,5 +1,6 @@
 using BLL;
-using DAL;
+using RoboBud.Presentation.Model.Robot;
+using RoboBudModel = RoboBud.Presentation.Model.Robot.RoboBud;
 using NUnit.Framework;
 
 namespace BLL.Tests;
@@ -20,8 +21,8 @@ public class RoboBudManagerTests
     {
         RoboBudManager manager1 = RoboBudManager.GetInstance();
         RoboBudManager manager2 = RoboBudManager.GetInstance();
-        RoboBud robot1 = manager1.Robot;
-        RoboBud robot2 = manager2.Robot;
+        RoboBudModel robot1 = manager1.Robot;
+        RoboBudModel robot2 = manager2.Robot;
         Assert.That(robot2, Is.SameAs(robot1));
     }
 }

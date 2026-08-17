@@ -1,6 +1,7 @@
-using Core;
+using BLL;
+using RoboBud.Presentation.Model.Type;
 
-namespace BLL;
+namespace RoboBud.BLL.GameBLL;
 
 public static class GameFactory
 {
