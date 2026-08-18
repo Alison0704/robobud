@@ -1,4 +1,4 @@
-﻿namespace RoboBud.Presentation.Model.Type;
+﻿namespace RoboBud.Core.Enums;
 
 public enum RobotStatus
 {

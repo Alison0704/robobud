@@ -2,7 +2,7 @@
 
 run:
 	@echo "Running the application..."
-	@dotnet run --project Controller/Console/Console.csproj
+	@dotnet run --project View/Console/Console.csproj
 
 test:
 	@echo "Running tests..."

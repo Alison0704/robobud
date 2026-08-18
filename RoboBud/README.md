@@ -57,14 +57,25 @@ Build a console application where a robotic pet prompts the user to feed or play
 * NUnit
 
 ## Folder Organization
-- Assets: Any images added in documentation and/or possible future UI contents
-- BLL: All the services the app performs.
-- Controller
-    - Console: 
-    - Helper: Any assists functions that will make the main consoleApp file readable.
-- Core
-    - Model: Classes that represent the data or concepts the application works with.
-- DAL: Communication with the Database or Core.
+- BLL — Contains the application's business rules and decision-making logic.
+- Controller — Receives user actions from the View and coordinates calls to the BLL.
+- Core — Contains shared contracts, interfaces, and types used across DAL and BLL.
+    - BLL and DAL can both depend on Core, while Core should remain independent and not depend on or directly modify BLL or DAL.
+- DAL — Handles retrieving, storing, and updating data through the database.
+- Database — Permanently stores the application's data.
+- Tests — Verifies that the application's components behave as expected.
+- View — Displays information to the user and collects user input.
+
+## Project Phases
+
+### `Phase1:` Database and DAL implementation
+
+- Designed the SQLite schema for `Robot` and `RobotLevel`, including name, timestamps, and percentage-based `HAPPY`/`ENERGIZED` levels.
+- Documented the status logic for `REFUSE`, `RELUCTANT`, and `ACCEPT` based on happiness and energy thresholds.
+- Captured the game requirements for number guessing and planned future extensibility for additional games.
+- Added a learning log for NUnit setup, test lifecycle, and organization patterns used in the project.
+- Recorded the planned design approach using a Singleton pattern for the active app instance and a future Factory pattern for game creation.
+- Identified the next implementation steps: database normalization, table creation, object mapping, and DAL development.
 
 ## Learning section
 

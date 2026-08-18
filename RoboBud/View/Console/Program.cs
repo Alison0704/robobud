@@ -1,4 +1,4 @@
-﻿namespace RoboBud.Presentation.View.Console;
+﻿namespace RoboBud.View.Console;
 public class Program
 {
     public static void Main(string[] args)

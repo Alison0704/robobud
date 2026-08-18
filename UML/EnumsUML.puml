@@ -1,0 +1,17 @@
+@startuml EnumsUML
+enum GameType
+{
+    GUESS_MY_NUMBER
+}
+enum RobotLevelType
+{
+    HAPPY,
+    ENERGIZED,
+}
+enum RobotStatus
+{
+    REFUSE,
+    RELUCTANT,
+    ACCEPT
+}
+@enduml

@@ -1,0 +1,8 @@
+@startuml ProjectUML
+package "DAL" {
+    !include DALUML.puml
+}
+package "Enums" {
+    !include EnumsUML.puml
+}
+@enduml

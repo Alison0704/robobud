@@ -1,0 +1,19 @@
+@startuml DALUML
+
+'DAL Model: Robot
+class RobotEntity {
+    + int Id
+    + string Name
+    + DateTime CreatedAt
+    + DateTime UpdatedAt
+}
+
+class RobotLevelEntity {
+    + int Id
+    + int RobotId
+    + RobotLevelType Type
+    + int Percentage
+}
+'''
+
+@enduml
